@@ -15,6 +15,7 @@
     --accent-bg-color:#188CE8;
     --border-item-color:#EEEEEE;
     --border-head-color:#ECECEC;
+    --icon-color:#AFB1B8;
 }
 *,
 *::before,
@@ -155,10 +156,10 @@ border-bottom: 1px solid var(--border-head-color);
 
 
 .contact-nav .link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
-
+    align-items: center;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -178,14 +179,31 @@ border-bottom: 1px solid var(--border-head-color);
     color: var(--accent-color);
 }
 
-
+.contact-nav-icon{
+    fill: currentColor;
+    margin-right: 10px;
+    
+}
 
 /*hero*/
 .hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--hero-bg-color);
+    background-image: url(../images/img18.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero :hover{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/img18.jpg);
+    
 }
 
 .hero-title{
@@ -248,6 +266,13 @@ border-bottom: 1px solid var(--border-head-color);
     line-height: 1.71;
 }
 
+.feature-box-icon{
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background: var(--time-bg-color);
+    border-radius: 4px;
+}
+
 /*description*/
 
 .section.description{
@@ -301,6 +326,39 @@ border-bottom: 1px solid var(--border-head-color);
     margin-bottom: 0;
     line-height: 1.19;
     text-align: center;
+}
+
+.social-box{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 16px 32px 0px 32px;
+    gap:10px;
+
+}
+
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 44px;
+    height: 44px;
+    background-color:var(--white-color);
+    fill: var(--icon-color);
+    border-radius: 50%;
+
+
+}
+
+.social-link:last-child {
+    margin-right: 0px;
+}
+
+
+
+.social-link:hover{
+    background-color: var(--accent-color);
+    fill: var(--white-color);
 }
 
 /* filtr*/
