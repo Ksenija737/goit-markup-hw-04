@@ -195,20 +195,16 @@ border-bottom: 1px solid var(--border-head-color);
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--hero-bg-color);
-    background-image: url(../images/img18.jpg);
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/img18.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.hero :hover{
-    background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-    url(../images/img18.jpg);
-    
-}
+
 
 .hero-title{
     
@@ -460,7 +456,10 @@ border-bottom: 1px solid var(--border-head-color);
     color: var(--primary-text-color);
     line-height: 1.88;
 }
-
+.work-card .link:hover,
+.work-card .link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 /*button*/
 
