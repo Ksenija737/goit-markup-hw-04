@@ -355,12 +355,13 @@ border-bottom: 1px solid var(--border-head-color);
 
 
 
-.social-link:hover{
+.social-link:hover,
+.social-link:focus{
     background-color: var(--accent-color);
     fill: var(--white-color);
 }
 
-/*client*/
+/*clients*/
 
 .client .section-title{
     margin-bottom: 50px;
@@ -370,33 +371,39 @@ border-bottom: 1px solid var(--border-head-color);
     display: flex;
     align-items: center;
     justify-content: center;
-
+    gap: 30px;
 }
 
-.client-item{
-    margin-right: 10px;
+.lient-item{
+    
     padding: 16px 32px;
-    border: 1px solid var(--icon-color);
+}
+.client-link{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 170px;
+    height: 92px;
     border-radius: 4px;
-    fill: var(--icon-color);
-}
-.client-item:last-child {
-    margin-right: 0;
+    border: 1px solid var(--icon-color);
+    color: var(--icon-color);
 }
 
-.client-item:hover,
-.client-item:focus{
+
+
+.client-link:hover,
+.client-link:focus{
     border: 1px solid var(--accent-color);
-    fill: var(--accent-color);
-}
-.client-icon{
-    fill: var(--icon-color);
+    color: var(--accent-color);
 }
 
-.client-icon:hover,
-.client-icon:focus{
-    fill: var(--accent-color);
-}
+.client-icon {
+    fill: currentColor;}
+    
+
+
 
 /* filtr*/
 
@@ -554,7 +561,7 @@ border-bottom: 1px solid var(--border-head-color);
 }
 
 .address .link:hover,
-.address .link:focus{
+.address .link:focus {
     color: var(--accent-color);
 }
 
@@ -582,7 +589,13 @@ border-bottom: 1px solid var(--border-head-color);
     padding: 0;
 }
 
-.social-link{
+.footer .social-link{
     fill: var(--white-color);
     background: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+    background: var(--accent-color);
+    
 }
